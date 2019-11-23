@@ -7,7 +7,10 @@ import Details from './components/details/details';
 function App() {
   const [page, setPage] = useState(1);
   const [date, setDate] = useState(null);
-  const [time, setTime] = useState("");
+  const [time, setTime] = useState(null);
+  const [name, setName] = useState(null);
+  const [email, setEmail] = useState(null);
+  const [phone, setPhone] = useState(null);
 
   useEffect(() => {
     if (date) setPage(2);
@@ -16,11 +19,18 @@ function App() {
 
   const handleBack = () =>  {
     setDate(null);
-    setTime("");
+    setTime(null);
+    setName(null);
+    setEmail(null);
+    setPhone(null);
     setPage(1);
   }
   
   const handleTime = (e) => setTime(e.target.value);
+  const handleName = (e) => setName(e.target.value);
+  const handleEmail = (e) => setEmail(e.target.value);
+  const handlePhone = (e) => setPhone(e.target.value);
+  
 
   switch(page) {
     case 1:
@@ -35,7 +45,10 @@ function App() {
 
     case 3:
       return <Details
-              handleBack={handleBack} />
+              handleBack={handleBack}
+              handleName={handleName}
+              handleEmail={handleEmail}
+              handlePhone={handlePhone} />
   }
 }
 
