@@ -30,7 +30,7 @@ export const DateWrap = styled.div`
         }
     
         .date {
-            margin-top: 14px;
+            margin-top: 15px;
         }
     }
 `;

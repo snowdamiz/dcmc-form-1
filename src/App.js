@@ -19,6 +19,7 @@ function App() {
     setTime("");
     setPage(1);
   }
+  
   const handleTime = (e) => setTime(e.target.value);
 
   switch(page) {

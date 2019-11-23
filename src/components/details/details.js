@@ -1,12 +1,12 @@
 import React from 'react';
 import { DetailsWrap } from './detailsStyles';
+import Banner from '../../assets/carkeys.jpg';
 
 function Details (props) {
     return (
         <DetailsWrap>
             <div className="formTwo">
-                <div className="img">
-
+                <div className="image">
                 </div>
                 <div className="section">
                     <input type="text" placeholder="Name" />

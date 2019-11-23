@@ -27,30 +27,55 @@ export const TimeWrap = styled.div`
             // flex-flow: row nowrap;
         }
 
-        .buttons {
-            background-color: ${colors.white};
-            width: 100%;
+        .section {
             margin-top: 15px;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            align-items: center;
-            padding: 40px 0;
 
-            button {
-                margin: 10px;
-                width: 110px;
-                height: 35px;        
-                border: none;
-                color: ${colors.black};
-                background-color: transparent;
-                box-shadow: 1px 2px 5px ${colors.shadow};
-                cursor: pointer;
+            .box {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                // border: 1px solid red;
+                height: 100px;
+                background-color: ${colors.primary};
 
-                &:hover {
-                    background-color: ${colors.primary};
+                h1 {
+                    font-size: 26px;
+                    text-align: center;
                     color: ${colors.white};
                 }
             }
+
+            .buttons {
+                background-color: ${colors.white};
+                width: 100%;
+                height: 245px;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                padding: 30px 0;
+    
+                button {
+                    margin: 5px 6px 5px 6px;
+                    width: 100px;
+                    height: 35px;        
+                    border: none;
+                    color: ${colors.black};
+                    border: 1px solid #D7D7D7;
+                    background-color: #EDEDED;
+                    // box-shadow: 1px 2px 5px ${colors.shadow};
+                    cursor: pointer;
+    
+                    &:hover {
+                        border: 1px solid ${colors.primary};
+                        background-color: ${colors.primary};
+                        color: ${colors.white};
+                        font-weight: bold;
+                    }
+                }
+            }
         }
+
+
 `;
