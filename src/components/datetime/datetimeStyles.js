@@ -53,9 +53,6 @@ export const DatetimeWrap = styled.div`
             }
 
             .heading {
-                h1, p {
-                    text-align: center;
-                }
 
             }
 
@@ -92,15 +89,3 @@ export const DatetimeWrap = styled.div`
     }
 `;
 
-export const customTheme = createMuiTheme({
-    palette: {
-        primary: {
-            main: '#0076b9',
-            dark: '#005E93',
-            light: '#0076b9'
-        },
-        secondary: {
-            main: '#0076b9',
-        }
-    }
-})

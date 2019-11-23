@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import { MuiPickersUtilsProvider, DatePicker } from '@material-ui/pickers';
-import MomentUtils from '@date-io/moment';
-import { MuiThemeProvider } from '@material-ui/core';
+
 
 import { DatetimeWrap, customTheme } from './datetimeStyles';
 
@@ -10,11 +8,7 @@ function Datetime (props) {
         <DatetimeWrap>
             <div className="formOne">
                 <div className="date">
-                <MuiThemeProvider theme={customTheme}>
-                    <MuiPickersUtilsProvider utils={MomentUtils}>
-                        <DatePicker value={props.date} onChange={props.setDate} variant="static" />
-                    </MuiPickersUtilsProvider>
-                </MuiThemeProvider>
+
                 </div>
                 <div className="section">
                     <div className="heading">
