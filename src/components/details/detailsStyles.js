@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { colors, fonts, media } from '../../vars';
-import Banner from '../../assets/carkeys.jpg';
+import Banner from '../../assets/banner.png';
 
 export const DetailsWrap = styled.div`
     position: relative;
@@ -14,7 +14,7 @@ export const DetailsWrap = styled.div`
     align-items: center;
     padding: 20px 0;
 
-    .formTwo {
+    .formThree {
         position: fixed;
         border: 1px solid white;
         background-color: white;
@@ -27,9 +27,9 @@ export const DetailsWrap = styled.div`
         padding: 0;
         margin: 0;
 
-        ${media.largeTb} {
-            flex-flow: row nowrap;
-        }
+        // ${media.largeTb} {
+        //     flex-flow: row nowrap;
+        // }
 
         .image {
             height: 300px;

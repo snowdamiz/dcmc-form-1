@@ -30,7 +30,25 @@ function App() {
   const handleName = (e) => setName(e.target.value);
   const handleEmail = (e) => setEmail(e.target.value);
   const handlePhone = (e) => setPhone(e.target.value);
-  
+
+  const handleSubmit = (e) => {
+    const templateId = 'dcmc_form_one';
+    const parsedDate = date._d;
+
+    sendFeedback(templateId, {
+      date: parsedDate,
+      time: time,
+      name: name,
+      email: email,
+      phone: phone
+    });
+  }
+
+  const sendFeedback = (templateId, variables) => {
+    window.emailjs.send('gmail', templateId, variables)
+      .then(res => console.log('Email successfully sent!'))
+      .catch(err => console.error('Failed to send', err))
+  }
 
   switch(page) {
     case 1:
@@ -48,7 +66,8 @@ function App() {
               handleBack={handleBack}
               handleName={handleName}
               handleEmail={handleEmail}
-              handlePhone={handlePhone} />
+              handlePhone={handlePhone}
+              handleSubmit={handleSubmit} />
   }
 }
 

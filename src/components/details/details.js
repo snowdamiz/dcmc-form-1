@@ -1,11 +1,10 @@
 import React from 'react';
 import { DetailsWrap } from './detailsStyles';
-import Banner from '../../assets/carkeys.jpg';
 
 function Details (props) {
     return (
         <DetailsWrap>
-            <div className="formTwo">
+            <div className="formThree">
                 <div className="image">
                 </div>
                 <div className="section">
@@ -14,7 +13,7 @@ function Details (props) {
                     <input type="text" placeholder="Phone" onChange={props.handlePhone} />
                     <div className="btns">
                         <div className="backBtn" onClick={props.handleBack}></div>
-                        <button className="submit">Schedule</button>
+                        <button className="submit" onClick={props.handleSubmit}>Schedule</button>
                     </div>
                 </div>
             </div>
