@@ -39,6 +39,11 @@ export const DetailsWrap = styled.div`
             padding: 0;
             margin: 0;
             border: none;
+            display: none;
+
+            ${media.largeTb} {
+                display: flex;
+            }
 
             // img {
             //     width: 100%;
@@ -52,10 +57,18 @@ export const DetailsWrap = styled.div`
             flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
-            padding: 30px 0;
+            padding: 15px 0 30px 0;
 
             ${media.largeTb} {
                 padding: 30px 30px;
+            }
+
+            p {
+                font-size: 20px
+                text-align: center;
+                font-weight: bold;
+                color: ${colors.black};
+                padding: 5px 0;
             }
 
             input {
@@ -88,6 +101,14 @@ export const DetailsWrap = styled.div`
                     height: 40px;
                     background-color: ${colors.primary};
                     cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 22px;
+                        height: 20px;
+                    }
 
                     &:hover {
                         background-color: ${colors.primaryDark};
