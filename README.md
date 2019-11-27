@@ -33,7 +33,7 @@ http://localhost:8080/dist/bundle.js
 ```
 
 If everything is working proceed by embedding the react app into the website.
-To embedd the app simply add this empty div to the bottom of the body of the dynamically loaded vehicle description pages. [Example Dealer Socker Page](https://www.dcmotorcompany.com/vehicle-details/2018-audi-q5-2-0t-premium-quattro-backup-camera-portland-or-id-32966059)
+To embedd the app simply add this empty div to the bottom of the body of the dynamically loaded vehicle description pages. [Example DCMotorcompany Page](https://www.dcmotorcompany.com/vehicle-details/2018-audi-q5-2-0t-premium-quattro-backup-camera-portland-or-id-32966059)
 
 ```
 <div id="root"></div>
