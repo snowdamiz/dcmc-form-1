@@ -24,6 +24,12 @@ module.exports = {
             }
         ],
     },
+    resolve: {
+        extensions: ['.js', '.jsx', '.css'], //An empty string is no longer required.
+        modules: [
+          'node_modules'
+        ]        
+    },
     optimization: {
         minimizer: [new UglyfiJsPlugin()]
     }
