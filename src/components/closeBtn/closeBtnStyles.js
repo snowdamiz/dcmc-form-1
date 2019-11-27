@@ -8,4 +8,8 @@ export const CloseBtnWrap = styled.div`
     position: absolute;
     top: 15px;
     right: 15px;
+
+    img {
+        cursor: pointer;
+    }
 `;
