@@ -3,7 +3,7 @@ const UglyfiJsPlugin = require("uglifyjs-webpack-plugin");
 const glob = require("glob");
 
 module.exports = {
-    context: __dirname,
+    // context: __dirname,
     entry: ['@babel/polyfill','./src/index.js'],
     output: {
         filename: "bundle.js"
