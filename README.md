@@ -9,7 +9,7 @@ Step by step of how to set up testing environment
 ### Installing
 
 First clone the repository into a folder outside of the website project folder.
-After its cloned cd into the project directory run npm install
+Once its cloned CD into the project directory run npm install
 
 ```
 npm install
@@ -17,7 +17,7 @@ npm install
 
 ### Testing App
 
-Cd into the app directory and run these two commands
+CD into the app directory and run these two commands
 
 ```
 yarn build
@@ -26,7 +26,7 @@ yarn build
 yarn start
 ```
 
-Once the server is up test the deployment localy using this url
+Once the server is up test the deployment localy using this url. If you see a bunch of minified javascript that means the test server is set up.
 
 ```
 http://localhost:8080/dist/bundle.js
