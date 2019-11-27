@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { colors, fonts, media } from '../../vars';
-import Banner from '../../assets/banner.png';
 
 export const DetailsWrap = styled.div`
     position: relative;
