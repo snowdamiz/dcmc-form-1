@@ -1,68 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# DCMotor Pop-Up V0.1
 
-## Available Scripts
+React application intended to be embedded inside of an existing webpage
 
-In the project directory, you can run:
+## How to Test App
 
-### `yarn start`
+Step by step of how to set up testing environment
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Installing
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+First clone the repository into a folder outside of the website project folder.
+After its cloned cd into the project directory run npm install
 
-### `yarn test`
+```
+npm install
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Testing App
 
-### `yarn build`
+Cd into the app directory and run these two commands
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+yarn build
+```
+```
+yarn start
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Once the server is up test the deployment localy using this url
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+http://localhost:8080/dist/bundle.js
+```
 
-### `yarn eject`
+If everything is working proceed by embedding the react app into the website.
+To embedd the app simply add this empty div to the bottom of the body of the dynamically loaded vehicle description pages. [Example Dealer Socker Page](https://www.dcmotorcompany.com/vehicle-details/2018-audi-q5-2-0t-premium-quattro-backup-camera-portland-or-id-32966059)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+<div id="root"></div>
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Then at the bottom of the page, after the body tag, add these scripts
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script src="http://localhost:8080/dist/bundle.js"></script>
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+If everything is done correctly the popup should come up in about 30 seconds after page load.

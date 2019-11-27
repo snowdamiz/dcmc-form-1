@@ -7,8 +7,6 @@ function Details (props) {
     return (
         <DetailsWrap>
             <div className="formThree">
-                {/* <div className="image">
-                </div> */}
                 <div className="section">
                     <CloseBtn />
                     <p>Complete the form <br/>below to schedule</p>
