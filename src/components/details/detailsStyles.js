@@ -26,30 +26,6 @@ export const DetailsWrap = styled.div`
         padding: 0;
         margin: 0;
 
-        // ${media.largeTb} {
-        //     flex-flow: row nowrap;
-        // }
-
-        // .image {
-        //     height: 300px;
-        //     width: 312px;
-        //     background: url(${Banner}) center;
-        //     background-size: cover;
-        //     padding: 0;
-        //     margin: 0;
-        //     border: none;
-        //     display: none;
-
-        //     ${media.largeTb} {
-        //         display: flex;
-        //     }
-
-        //     // img {
-        //     //     width: 100%;
-        //     //     height: 300px;
-        //     // }
-        // }
-
         .section {
             // border: 1px solid blue;
             display: flex;
