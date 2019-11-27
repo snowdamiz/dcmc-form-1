@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+// import Value from '../script.js';
 
 import Datee from './components/date/date';
 import Time from './components/time/time';
@@ -11,6 +12,11 @@ function App() {
   const [name, setName] = useState(null);
   const [email, setEmail] = useState(null);
   const [phone, setPhone] = useState(null);
+  const [stockNumber, setStockNumber] = useState("Fetch PID ");
+  const [year, setYear] = useState("Fetch Year ");
+  const [make, setMake] = useState("Fetch Make");
+  const [model, setModel] = useState("Fetch Model");
+  const [vin, setVin] = useState("Fetch VIN");
 
   useEffect(() => {
     if (date) setPage(2);

@@ -1,14 +1,16 @@
 import React from 'react';
 import Back from '../../assets/back.svg';
+import CloseBtn from '../closeBtn/closeBtn';
 import { DetailsWrap } from './detailsStyles';
 
 function Details (props) {
     return (
         <DetailsWrap>
             <div className="formThree">
-                <div className="image">
-                </div>
+                {/* <div className="image">
+                </div> */}
                 <div className="section">
+                    <CloseBtn />
                     <p>Complete the form <br/>below to schedule</p>
                     <input type="text" placeholder="Name" onChange={props.handleName} />
                     <input type="text" placeholder="Email" onChange={props.handleEmail} />

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { HeaderWrap } from './headerStyles';
+import CloseBtn from '../closeBtn/closeBtn';
 
 function Header (props) {
     const [heading, setHeading] = useState("");
@@ -12,6 +13,7 @@ function Header (props) {
 
     return (
         <HeaderWrap>
+            <CloseBtn />
             <h1>Want to test Drive this Car?</h1>
             <p>{headings[0]}</p>
         </HeaderWrap>
