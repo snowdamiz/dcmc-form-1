@@ -6,9 +6,11 @@ export const HeaderWrap = styled.div`
     background-color: ${colors.white};
 
     h1 {
-        line-height: 34px;
+        line-height: 32px;
         text-align: center;
-        padding: 20px 20px 5px 20px;
+        padding: 30px 30px 20px 30px;
+        font-family: ${fonts.primary};
+        font-size: 25px;
     }
 
     p {

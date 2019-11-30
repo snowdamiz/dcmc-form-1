@@ -10,11 +10,10 @@ function App() {
   const [name, setName] = useState(null);
   const [email, setEmail] = useState(null);
   const [phone, setPhone] = useState(null);
-  const [stockNumber, setStockNumber] = useState("Fetch PID ");
-  const [year, setYear] = useState("Fetch Year ");
-  const [make, setMake] = useState("Fetch Make");
-  const [model, setModel] = useState("Fetch Model");
-  const [vin, setVin] = useState("Fetch VIN");
+  // const [stockNumber, setStockNumber] = useState(gaObjects['VehicleObject'].StockNumber);
+  // const [year, setYear] = useState(gaObjects['VehicleObject'].Year);
+  // const [make, setMake] = useState(gaObjects['VehicleObject'].Make);
+  // const [model, setModel] = useState(gaObjects['VehicleObject'].Model);
 
   useEffect(() => {
     if (date) setPage(2);
@@ -44,11 +43,17 @@ function App() {
       time: time,
       name: name,
       email: email,
-      phone: phone
+      phone: phone,
+      // stockNumber: stockNumber,
+      // year: year,
+      // make: make,
+      // model: model
     });
   }
 
   const sendFeedback = (templateId, variables) => {
+    console.log(templateId, variables);
+
     window.emailjs.send('gmail', templateId, variables)
       .then(res => console.log('Email successfully sent!'))
       .catch(err => console.error('Failed to send', err))

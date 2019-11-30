@@ -28,7 +28,7 @@ export const TimeWrap = styled.div`
         }
 
         .section {
-            margin-top: 15px;
+            // margin-top: 15px;
 
             .box {
                 display: flex;

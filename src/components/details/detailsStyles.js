@@ -11,7 +11,7 @@ export const DetailsWrap = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    // padding: 20px 0;
 
     .formThree {
         position: fixed;
@@ -39,10 +39,12 @@ export const DetailsWrap = styled.div`
             }
 
             p {
+                font-family: ${fonts.primary};
+                line-height: 26px;
                 font-size: 20px
                 text-align: center;
                 font-weight: bold;
-                color: ${colors.black};
+                // color: ${colors.black};
                 padding: 5px 0;
             }
 

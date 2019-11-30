@@ -7,11 +7,7 @@ export const colors = {
 }
   
   export const fonts = {
-    primary: `'Roboto', sans-serif;`,
-    test1: `'Lobster', cursive;`,
-    test2: `'Marck Script', cursive;`,
-    test3: `'Damion', cursive;`,
-    test4: `'Galada', crusive;`,
+    primary: `'Raleway', sans-serif`,
   }
   
 export const media = {
