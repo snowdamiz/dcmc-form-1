@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import { colors, fonts, media } from '../../vars';
 
 export const DetailsWrap = styled.div`
-    position: relative;
-    width: 100hw;
-    height: 100vh;
+    position: fixed;
+    width: 100%;
+    height: 100%;
     background-color: #000;
     opacity: 0.7;
     z-index: 1;

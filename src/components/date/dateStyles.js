@@ -3,15 +3,16 @@ import { colors, fonts, media } from '../../vars';
 import { createMuiTheme } from '@material-ui/core';
 
 export const DateWrap = styled.div`
-    position: relative;
-    width: 100hw;
-    height: 100vh;
+    position: fixed;
+    width: 100%;
+    height: 100%;
     background-color: #000;
     opacity: 0.7;
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    // border: 1px solid red;
 
     .formOne {
         // width: 100px;
