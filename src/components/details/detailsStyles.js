@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { colors, fonts, media } from '../../vars';
 
 export const DetailsWrap = styled.div`
-    && {
+    &&& {
         position: fixed;
         width: 100%;
         height: 100%;

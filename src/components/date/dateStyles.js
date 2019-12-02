@@ -3,7 +3,7 @@ import { colors, fonts, media } from '../../vars';
 import { createMuiTheme } from '@material-ui/core';
 
 export const DateWrap = styled.div`
-    && {
+    &&& {
         position: fixed;
         width: 100%;
         height: 100%;
