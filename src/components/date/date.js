@@ -1,10 +1,10 @@
 import React from 'react';
+import { DateWrap, customTheme } from './dateStyles';
+
 import { MuiPickersUtilsProvider, DatePicker } from '@material-ui/pickers';
 import MomentUtils from '@date-io/moment';
 import { MuiThemeProvider } from '@material-ui/core';
 import Header from '../header/header';
-
-import { DateWrap, customTheme } from './dateStyles';
 
 function Datee (props) {
     return (

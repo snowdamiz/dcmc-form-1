@@ -5,8 +5,8 @@ export const DetailsWrap = styled.div`
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: #000;
-    opacity: 0.7;
+    // background-color: #000;
+    // opacity: 0.7;
     z-index: 1000;
     display: flex;
     justify-content: center;
@@ -25,6 +25,7 @@ export const DetailsWrap = styled.div`
         width: 310px;
         padding: 0;
         margin: 0;
+        box-shadow: 0 0 100px #585858;
 
         .section {
             // border: 1px solid blue;

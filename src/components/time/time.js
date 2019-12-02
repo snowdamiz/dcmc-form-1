@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../header/header';
-
 import { TimeWrap } from './timeStyles';
+
+import Header from '../header/header';
 
 function Time (props) {
     return (

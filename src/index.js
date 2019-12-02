@@ -6,3 +6,5 @@ import App from './App';
 setTimeout(() => {
     ReactDOM.render(<App />, document.getElementById('root'));
 }, 30000 );
+
+// ReactDOM.render(<App />, document.getElementById('root'));

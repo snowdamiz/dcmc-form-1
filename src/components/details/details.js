@@ -1,7 +1,8 @@
 import React from 'react';
+import { DetailsWrap } from './detailsStyles';
+
 import Back from '../../assets/back.svg';
 import CloseBtn from '../closeBtn/closeBtn';
-import { DetailsWrap } from './detailsStyles';
 
 function Details (props) {
     return (
