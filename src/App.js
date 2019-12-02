@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Datee from './components/date/date';
 import Time from './components/time/time';
 import Details from './components/details/details';
+import * as emailjs from 'emailjs-com';
 
 function App() {
   const [page, setPage] = useState(1);
@@ -10,10 +11,10 @@ function App() {
   const [name, setName] = useState(null);
   const [email, setEmail] = useState(null);
   const [phone, setPhone] = useState(null);
-  // const [stockNumber, setStockNumber] = useState(gaObjects['VehicleObject'].StockNumber);
-  // const [year, setYear] = useState(gaObjects['VehicleObject'].Year);
-  // const [make, setMake] = useState(gaObjects['VehicleObject'].Make);
-  // const [model, setModel] = useState(gaObjects['VehicleObject'].Model);
+  const [stockNumber, setStockNumber] = useState(gaObjects['VehicleObject'].StockNumber);
+  const [year, setYear] = useState(gaObjects['VehicleObject'].Year);
+  const [make, setMake] = useState(gaObjects['VehicleObject'].Make);
+  const [model, setModel] = useState(gaObjects['VehicleObject'].Model);
 
   useEffect(() => {
     if (date) setPage(2);
@@ -44,10 +45,10 @@ function App() {
       name: name,
       email: email,
       phone: phone,
-      // stockNumber: stockNumber,
-      // year: year,
-      // make: make,
-      // model: model
+      stockNumber: stockNumber,
+      year: year,
+      make: make,
+      model: model
     });
   }
 
