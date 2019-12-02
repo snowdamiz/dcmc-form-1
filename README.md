@@ -44,7 +44,7 @@ Then at the bottom of the page, after the body tag, add these scripts
 ```
 <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-<script src="http://localhost:8080/dist/bundle.js"></script>
+<script src="https://yurlovandrew.000webhostapp.com/dist/bundle.js"></script>
 ```
 
 At the top of the page in the header tag add these emailjs scripts.
