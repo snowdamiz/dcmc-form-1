@@ -7,7 +7,7 @@ export const DetailsWrap = styled.div`
     height: 100%;
     background-color: #000;
     opacity: 0.7;
-    z-index: 1;
+    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@ export const DetailsWrap = styled.div`
         position: fixed;
         border: 1px solid white;
         background-color: white;
-        z-index: 2;
+        z-index: 1101;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
