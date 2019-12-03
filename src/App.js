@@ -57,7 +57,10 @@ function App() {
     console.log(templateId, variables);
 
     window.emailjs.send('gmail', templateId, variables)
-      .then(res => console.log('Email successfully sent!'))
+      .then(res => {
+        console.log('Email successfully sent!');
+        ReactDOM.unmountComponentAtNode(document.getElementById('root'));
+      })
       .catch(err => console.error('Failed to send', err))
   }
 
