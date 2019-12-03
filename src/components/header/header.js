@@ -14,7 +14,7 @@ function Header (props) {
     return (
         <HeaderWrap>
             <CloseBtn />
-            <h1>Want to test Drive this Car?</h1>
+            <h1>Interested? Take it out for a drive!</h1>
             {/* <p>{headings[0]}</p> */}
         </HeaderWrap>
     )

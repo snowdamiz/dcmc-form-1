@@ -50,19 +50,19 @@ export const DetailsWrap = styled.div`
                     padding: 5px 0;
                 }
     
-                input {
-                    width: 220px;
-                    height: 26px;
-                    border: 1px solid #D7D7D7;
+                .frmInput {
+                    width: 220px !important;
+                    height: 26px !important;
+                    border: 1px solid #D7D7D7 !important;
                     // border: none;
-                    color: ${colors.black};
-                    background-color: #EDEDED;
-                    padding: 10px;
-                    font-size: 17px;
-                    margin: 8px 0;
+                    color: ${colors.black} !important;
+                    background-color: #EDEDED !important;
+                    padding: 10px !important;
+                    font-size: 17px !important;
+                    margin: 8px 0 !important;
                     
                     &:focus::placeholder{
-                        color:transparent;
+                        color:transparent !important;
                    }
                 }
     
@@ -76,35 +76,35 @@ export const DetailsWrap = styled.div`
                     margin-top: 10px;
     
                     .backBtn {
-                        width: 40px;
-                        height: 40px;
-                        background-color: ${colors.primary};
-                        cursor: pointer;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        width: 40px !important;
+                        height: 40px !important;
+                        background-color: ${colors.primary} !important;
+                        cursor: pointer !important;
+                        display: flex !important;
+                        justify-content: center !important;
+                        align-items: center !important;
     
                         img {
-                            width: 22px;
-                            height: 20px;
+                            width: 22px !important;
+                            height: 20px !important;
                         }
     
                         &:hover {
-                            background-color: ${colors.primaryDark};
+                            background-color: ${colors.primaryDark} !important;
                         }
                     }
     
                     .submit {
-                        width: 190px;
-                        height: 40px;
-                        border: 1px solid ${colors.primary};
-                        background-color: ${colors.primary};
-                        font-size: 16px;
-                        color: ${colors.white};
-                        cursor: pointer;
+                        width: 190px !important;
+                        height: 40px !important;
+                        border: 1px solid ${colors.primary} !important;
+                        background-color: ${colors.primary} !important;
+                        font-size: 16px !important;
+                        color: ${colors.white} !important;
+                        cursor: pointer !important;
     
                         &:hover {
-                            background-color: ${colors.primaryDark};
+                            background-color: ${colors.primaryDark} !important;
                         }
                     }
                 }

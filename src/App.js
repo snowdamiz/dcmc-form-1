@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom';
 import Datee from './components/date/date';
 import Time from './components/time/time';
 import Details from './components/details/details';
@@ -18,6 +19,16 @@ function App() {
   const [model, setModel] = useState(gaObjects['VehicleObject'].Model);
 
   useEffect(() => {
+    let width = window.innerWidth
+
+    if (width > 600) {
+      ReactDOM.unmountComponentAtNode(document.getElementById('root'));
+    }
+
+    if (page === 0) {
+      ReactDOM.unmountComponentAtNode(document.getElementById('root'));
+    }
+
     if (date) setPage(2);
     if (time) setPage(3);
   }, [date, time, page]);
@@ -37,6 +48,8 @@ function App() {
   const handlePhone = (e) => setPhone(e.target.value);
 
   const handleSubmit = (e) => {
+    e.preventDefault();
+
     const templateId = 'dcmc_form_one';
     const parsedDate = date._d;
 
@@ -51,16 +64,15 @@ function App() {
       make: make,
       model: model
     });
+
+    setPage(0);
   }
 
   const sendFeedback = (templateId, variables) => {
     console.log(templateId, variables);
 
     window.emailjs.send('gmail', templateId, variables)
-      .then(res => {
-        console.log('Email successfully sent!');
-        ReactDOM.unmountComponentAtNode(document.getElementById('root'));
-      })
+      .then(res => console.log('Email successfully sent!'))
       .catch(err => console.error('Failed to send', err))
   }
 

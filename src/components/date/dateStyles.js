@@ -13,7 +13,6 @@ export const DateWrap = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        // border: 1px solid red;
     
         .formOne {
             // width: 100px;
