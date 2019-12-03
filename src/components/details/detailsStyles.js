@@ -3,7 +3,7 @@ import { colors, fonts, media } from '../../vars';
 
 export const DetailsWrap = styled.div`
     &&& {
-        position: fixed;
+        position: absolute;
         width: 100%;
         height: 100%;
         // background-color: #000;

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Datee from './components/date/date';
 import Time from './components/time/time';
 import Details from './components/details/details';
+import parse from 'emailjs-mime-parser'
 import * as emailjs from 'emailjs-com';
 
 function App() {

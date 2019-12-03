@@ -17,7 +17,7 @@ export const TimeWrap = styled.div`
             width: 310px;
             position: fixed;
             // border: 1px solid white;
-            // background-color: white;
+            background-color: white;
             z-index: 1101;
             display: flex;
             flex-flow: column nowrap;
@@ -31,6 +31,7 @@ export const TimeWrap = styled.div`
     
             .section {
                 // margin-top: 15px;
+                padding-bottom: 40px;
     
                 .box {
                     display: flex;
