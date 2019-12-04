@@ -11,9 +11,9 @@ function Details (props) {
                 <div className="section">
                     <CloseBtn />
                     <p>Complete the form <br/>below to schedule</p>
-                    <input class="frmInput" type="text" placeholder="Name" onChange={props.handleName} />
-                    <input class="frmInput" type="text" placeholder="Email" onChange={props.handleEmail} />
-                    <input class="frmInput" type="text" placeholder="Phone" onChange={props.handlePhone} />
+                    <input className="frmInput" type="text" placeholder="Name" onChange={props.handleName} />
+                    <input className="frmInput" type="text" placeholder="Email" onChange={props.handleEmail} />
+                    <input className="frmInput" type="text" placeholder="Phone" onChange={props.handlePhone} />
                     <div className="btns">
                         <div className="backBtn" onClick={props.handleBack}>
                             <img src={Back} />

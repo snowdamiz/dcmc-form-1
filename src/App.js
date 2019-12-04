@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 import Datee from './components/date/date';
 import Time from './components/time/time';
 import Details from './components/details/details';
-import parse from 'emailjs-mime-parser'
-import * as emailjs from 'emailjs-com';
+import Axios from 'axios';
 
 function App() {
   const [page, setPage] = useState(1);
@@ -50,30 +49,20 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const templateId = 'dcmc_form_one';
-    const parsedDate = date._d;
+    let dataSubmitted = {
+      date,
+      time,
+      name,
+      email,
+      phone,
+      stockNumber,
+      year,
+      make,
+      model
+    }
 
-    sendFeedback(templateId, {
-      date: parsedDate,
-      time: time,
-      name: name,
-      email: email,
-      phone: phone,
-      stockNumber: stockNumber,
-      year: year,
-      make: make,
-      model: model
-    });
-
+    Axios.post("https://dcwebleads.herokuapp.com/api/send", dataSubmitted);
     setPage(0);
-  }
-
-  const sendFeedback = (templateId, variables) => {
-    console.log(templateId, variables);
-
-    window.emailjs.send('gmail', templateId, variables)
-      .then(res => console.log('Email successfully sent!'))
-      .catch(err => console.error('Failed to send', err))
   }
 
   switch(page) {
