@@ -49,11 +49,19 @@ export const DetailsWrap = styled.div`
                     // color: ${colors.black};
                     padding: 5px 0;
                 }
+
+                label {
+                    font-size: 12px;
+                    font-weight: 600;
+                    font-family: ${fonts.primary};
+                    color: red;
+                    text-align: left;
+                }
     
                 .frmInput {
                     width: 220px !important;
                     height: 26px !important;
-                    border: 1px solid #D7D7D7 !important;
+                    border: 1px solid ${(props) => props.err ? 'red' : '#D7D7D7'} !important;
                     // border: none;
                     color: ${colors.black} !important;
                     background-color: #EDEDED !important;

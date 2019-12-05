@@ -22,8 +22,8 @@
     "styled-components": "^4.4.1"
   },
   "scripts": {
-    "start": "webpack-dev-server --inline --hot",
-    "build": "webpack --config webpack.config.js",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
