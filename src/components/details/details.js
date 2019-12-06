@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from '../header/header';
 import { DetailsWrap } from './detailsStyles';
 
 import Back from '../../assets/back.svg';
@@ -8,9 +9,10 @@ function Details (props) {
     return (
         <DetailsWrap>
             <div className="formThree">
+                <Header page={props.page} />
                 <div className="section">
-                    <CloseBtn />
-                    <p>Complete the form <br/>below to schedule</p>
+                    {/* <CloseBtn />
+                    <p>Complete the form <br/>below to schedule</p> */}
                     {props.nameErr ? <label>Enter a valid name</label> : null }
                     <input className="frmInput" type="text" placeholder="Name" onChange={props.handleName} />
                     {props.emailErr ? <label>Enter a valid email address</label> : null }

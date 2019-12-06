@@ -16,7 +16,7 @@ export const DetailsWrap = styled.div`
     
         .formThree {
             position: fixed;
-            border: 1px solid white;
+            border: 18px solid white;
             background-color: white;
             z-index: 1101;
             display: flex;
@@ -26,15 +26,19 @@ export const DetailsWrap = styled.div`
             width: 310px;
             padding: 0;
             margin: 0;
-            box-shadow: 0 0 100px #585858;
+            box-shadow: 0 0 120px #585858;
+            border-radius: 8px;
     
             .section {
+                width: 100%;
+                height: 100%;
                 // border: 1px solid blue;
                 display: flex;
                 flex-flow: column nowrap;
                 justify-content: center;
                 align-items: center;
                 padding: 15px 0 30px 0;
+                box-shadow: 0 0 10px ${colors.lightShadow};
     
                 ${media.largeTb} {
                     padding: 30px 30px;

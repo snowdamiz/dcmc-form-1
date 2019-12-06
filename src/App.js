@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import Datee from './components/date/date';
 import Time from './components/time/time';
 import Details from './components/details/details';
-import Validate from './validate';
 import Axios from 'axios';
 
 function App() {
@@ -30,7 +29,7 @@ function App() {
     
     if (date) setPage(2);
     if (time) setPage(3);
-  }, [date, time, page]);
+  }, [date, time]);
 
   const handleBack = () =>  {
     setDate(null);
@@ -68,7 +67,7 @@ function App() {
       const name = d[2];
       const email = d[3];
       const phone = d[4];
-      
+
       const regexName = /^[a-zA-Z\s]*$/;
       const regexNumber = /^\d+$/;
       const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;

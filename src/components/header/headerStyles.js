@@ -10,6 +10,7 @@ export const HeaderWrap = styled.div`
         text-align: center;
         padding: 30px 30px 20px 30px;
         font-family: ${fonts.primary};
+        color: ${colors.black};
         font-size: 25px;
     }
 

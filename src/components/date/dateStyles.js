@@ -18,14 +18,15 @@ export const DateWrap = styled.div`
             // width: 100px;
             // height: 100px;
             position: fixed;
-            // border: 1px solid white;
+            border: 18px solid white;
             // background-color: white;
             z-index: 1101;
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
-            box-shadow: 0 0 100px #585858;
+            box-shadow: 0 0 120px #585858;
+            border-radius: 8px;
     
             ${media.largeTb} {
                 // flex-flow: row nowrap;
@@ -33,6 +34,9 @@ export const DateWrap = styled.div`
         
             .date {
                 // margin-top: 15px;
+                // border: 1px solid ${colors.white};
+                // border-radius: 8px;
+                box-shadow: 0 0 10px ${colors.lightShadow};
             }
         }
     }

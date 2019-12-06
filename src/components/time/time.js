@@ -7,7 +7,7 @@ function Time (props) {
     return (
         <TimeWrap>
             <div className="formTwo">
-                <Header />
+                <Header page={props.page}/>
                 <div className="section">
                     <div className="box">
                         <h1>Choose your time</h1>
