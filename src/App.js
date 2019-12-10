@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Datee from './components/date/date';
 import Time from './components/time/time';
 import Details from './components/details/details';
+import DateTime from './components/datetime/datetime';
 import Axios from 'axios';
 
 function App() {
@@ -12,14 +13,13 @@ function App() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  // const [err, setErr] = useState([]);
   const [nameErr, setNameErr] = useState(0);
   const [emailErr, setEmailErr] = useState(0);
   const [phoneErr, setPhoneErr] = useState(0);
-  // const [stockNumber, setStockNumber] = useState(gaObjects['VehicleObject'].StockNumber);
-  // const [year, setYear] = useState(gaObjects['VehicleObject'].Year);
-  // const [make, setMake] = useState(gaObjects['VehicleObject'].Make);
-  // const [model, setModel] = useState(gaObjects['VehicleObject'].Model);
+  const [stockNumber, setStockNumber] = useState(gaObjects['VehicleObject'].StockNumber);
+  const [year, setYear] = useState(gaObjects['VehicleObject'].Year);
+  const [make, setMake] = useState(gaObjects['VehicleObject'].Make);
+  const [model, setModel] = useState(gaObjects['VehicleObject'].Model);
 
   useEffect(() => {
     let width = window.innerWidth
@@ -54,13 +54,11 @@ function App() {
       name,
       email,
       phone,
-      // stockNumber,
-      // year,
-      // make,
-      // model
+      stockNumber,
+      year,
+      make,
+      model
     }
-
-    // Validate(dataSubmitted, setPage());
 
     function validate(data) {
       const d = Object.keys(data).map(i => data[i]);
@@ -95,8 +93,12 @@ function App() {
 
     validate(dataSubmitted);
 
-    // Axios.post("https://dcwebleads.herokuapp.com/api/send", dataSubmitted);
-    // setPage(0);
+    if (!nameErr && !phoneErr && !emailErr) {
+      Axios.post("https://dcwebleads.herokuapp.com/api/send", dataSubmitted);
+      setTimeout(() => {
+        setPage(0);
+      }, 2000);
+    }
   }
 
   switch(page) {
@@ -121,6 +123,22 @@ function App() {
               emailErr={emailErr}
               nameErr={nameErr} />
   }
+
+  // if (window.innerWidth < 600) {
+  // } else {
+  //   switch(page) {
+  //     case 1:
+  //       return <DateTime 
+  //               date={date}
+  //               setDate={setDate}
+  //               page={page}
+  //               time={time}
+  //               handleTime={handleTime} />
+  //     case 2:
+  //       return 
+  //   }
+  // }
+
 }
 
 export default App;

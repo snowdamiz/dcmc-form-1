@@ -15,7 +15,8 @@ export const TimeWrap = styled.div`
     
         .formTwo {
             width: 310px;
-            position: fixed;
+            // height: 400px;
+            // position: fixed;
             border: 18px solid white;
             background-color: white;
             z-index: 1101;
@@ -34,6 +35,7 @@ export const TimeWrap = styled.div`
                 // margin-top: 15px;
                 // padding-bottom: 40px;
                 box-shadow: 0 0 10px ${colors.lightShadow};
+                height: 410px;
     
                 .box {
                     display: flex;
